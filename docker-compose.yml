@@ -13,9 +13,7 @@ services:
   frontend:
     image: ekvid/quirknotes_frontend:latest
     ports:
-      - "3000:3000"
-    depends_on:
-      - backend
+      - "3000:80"
 
   mongodb:
     image: mongo:latest
